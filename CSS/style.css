@@ -1,0 +1,103 @@
+
+/* Estilos generales de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.contenedor {
+    width: 350px;
+    margin: 100px auto;
+}
+
+/* Título */
+h1 {
+    font-size: 25px;
+    text-align: center;
+    color: #222;
+}
+
+/* Texto */
+p {
+    color: #555;
+}
+
+/* Contenedor del desplegable */
+.desplegable {
+    position: relative;
+    width: 100%;
+}
+
+/* Botón principal */
+.boton-desplegable {
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    border: 2px solid #333;
+    border-radius: 10px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+/* Flecha */
+#flecha {
+    font-size: 20px;
+}
+
+/* Lista de opciones */
+.lista-opciones {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    border: 2px solid #333;
+    border-radius: 10px;
+    margin-top: 5px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* Cuando el menú está abierto */
+.lista-opciones.abierto {
+    display: block;
+}
+
+/* Cada opción */
+.opcion {
+    padding: 15px;
+    font-size: 18px;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+}
+
+/* Quitar borde de la última opción */
+.opcion:last-child {
+    border-bottom: none;
+}
+
+/* Cuando pasamos el mouse */
+.opcion:hover {
+    background-color: #e8e8e8;
+}
+
+/* Opción seleccionada */
+.opcion.seleccionado {
+    background-color: #dceaff;
+    font-weight: bold;
+}
+
+/* Diseño para celulares */
+@media (max-width: 480px) {
+
+    .contenedor {
+        width: 100%;
+        max-width: 350px;
+        margin: 60px auto;
+    }
+
+}
